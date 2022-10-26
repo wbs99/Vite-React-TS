@@ -1,12 +1,11 @@
-import React, { ReactElement } from "react"
+import React, { ReactNode } from "react"
 
 type Props = {
-  slotA: ReactElement
-  slotB: ReactElement
+  slotA: ReactNode
+  slotB: ReactNode
 }
 
-export const SlotTest: React.FC<Props> = (props) => {
-  const { slotA, slotB } = props
+export const SlotTest: React.FC<Props> = ({ slotA, slotB }) => {
   return (
     <div>
       {slotA}

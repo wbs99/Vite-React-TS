@@ -20,25 +20,23 @@ export const Test = () => {
       <button onClick={delayAdd}>666</button>
       <br />
       <div>
-        <SlotTest slotA={slotA()} slotB={slotB()} />
+        <SlotTest
+          slotA={
+            <>
+              这是 slot A 的内容
+            </>
+          }
+          slotB={
+            <>
+              这是 slot b 的内容
+            </>
+          }
+        />
       </div>
     </>
   )
 }
 
 
-const slotA = () => {
-  return (
-    <>
-      这是 slot A 的内容
-    </>
-  )
-}
 
-const slotB = () => {
-  return (
-    <>
-      这是 slot b 的内容
-    </>
-  )
-}
+
