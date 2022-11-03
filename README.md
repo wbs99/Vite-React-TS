@@ -15,3 +15,4 @@
   ```
   <Icon name='xxx' />
   ```
+ - 已对 axios 进行基础封装，并引入 faker.js
