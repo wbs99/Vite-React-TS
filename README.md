@@ -8,10 +8,12 @@
 - 已引入 styled-components 
 - 已引入基础 zustand
 
-- 已引入 Icon
+- 已封装 Icon
+- 
   使用方式：
   1. 在 assets/icons 目录下添加 xxx.svg 文件
   2. 组件中使用
   ```
   <Icon name='xxx' />
   ```
+ - 已对 axios 进行基础封装，并引入 faker.js
