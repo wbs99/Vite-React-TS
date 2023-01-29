@@ -22,7 +22,7 @@
  - 添加侧边滑出菜单，使用 react-spring 实现滑出动画
  ```
  import { useState } from "react"
-  import { AsideMenu } from "../components/AsideMenu"
+  import { Popup } from "../components/Popup"
 
   export const Home = () => {
     const [visible, setVisible] = useState(false)
@@ -32,7 +32,7 @@
     return (
       <>
         <button onClick={onClick}>点击展开侧边按钮</button>
-        <AsideMenu visible={visible} onClickMask={() => setVisible(false)} />
+        <Popup visible={visible} onClickMask={() => setVisible(false)} />
       </>
     )
   }
