@@ -1,0 +1,33 @@
+@keyframes marquee {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+  
+}
+.marquee{
+  display: flex;
+  overflow: hidden;
+}
+.paseOnHover:hover{
+  .content{
+    animation-play-state: paused;
+  }
+}
+.content{
+  animation: marquee 5s infinite linear;
+  white-space: nowrap;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.leftOverlay{
+  left: 0;
+}
+.rightOverlay{
+  right:0;
+}
